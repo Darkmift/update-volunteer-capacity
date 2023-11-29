@@ -1,6 +1,7 @@
 import { APIGatewayProxyEvent } from 'aws-lambda';
+import { MondayUpdateItemEvent } from '../types';
 
-export const mockMondayEvent = {
+export const mockMondayEvent: { event: MondayUpdateItemEvent } = {
     event: {
         app: 'monday',
         type: 'update_column_value',
